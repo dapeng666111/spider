@@ -32,7 +32,7 @@ res.encoding=res.apparent_encoding
 
 html1=etree.parse('E:/XPP-1/xpp-exercise/video-word/url-baidu001.html',etree.HTMLParser())
 result1=html1.xpath('//a/text()')
-result2=html1.xpath('//a[@href="https://passport.baidu.com/v2/?login"]/class')
+result2=html1.xpath('//a[@href="https://passport.baidu.com/v2/?login"]/@class')
 print(result1,result2)
 
 
